@@ -1,5 +1,5 @@
 # Linear Regression to understand factors affecting demand of Bike Sharing
-> In this project we are focused on building the linear regression model to understand the factors affecting demand for shared bikes in American market for BoomBikes to better cater to people'e demand of shared bikes after end of quarantine situation across nation due to Covid-19 so they can stand out from other service providers and make huge profits.
+> In this project we are focused on building the advanced regression model using regularisation to understand the variables which are significant in predicting the price of a house & how well those variables describe the price of a house which will then be used by the management to manipulate strategy as per price variation with variables.
 
 
 ## Table of Contents
@@ -14,67 +14,55 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## Problem Statement
-A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
+A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia. The data is provided in the CSV file below.
 
+The company is looking at prospective properties to buy to enter the market. You are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
 
-A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state. 
+The company wants to know:
 
+1. Which variables are significant in predicting the price of a house, and
+2. How well those variables describe the price of a house.
 
-In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
-
-
-Boombikes want to understand the factors on which the demand for these shared bikes depends. Specifically, they want to understand the factors affecting the demand for these shared bikes in the American market. The company wants to know:
-
-1. Which variables are significant in predicting the demand for shared bikes.
-2. How well those variables describe the bike demands
+Also, determine the optimal value of lambda for ridge and lasso regression.
 
 ## Business Objective
-To model the demand for shared bikes with the available independent variables. 
-It will be used by the BoomBikes management to understand how exactly the demands vary with different features on which they can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. 
-Further, the model will be a good way for management to understand the demand dynamics of a new market.
-
-- Data Set : 
-Is fetched from publication
-[1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.
+Required to model the price of houses with the available independent variables. This model will then be used by the management to understand how exactly the prices vary with the variables. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns. Further, the model will be a good way for management to understand the pricing dynamics of a new market.
 
 
 ## Solution Approach
-1. Reading and Understanding the Data
+1. Reading, Understanding & Cleaning the Data
 2. Visualising the Data
 3. Data Preparation for modelling
 4. Splitting the Data into Training and Testing Sets
-5. Building a linear model
-6. Residual Analysis of the train data
-7. Making Predictions Using the Final Mode
-8. Model Evaluation
+5. Model Building and Evaluation
+6. Ridge Regression
+7. Lasso Regression
+8. Model Comparison
+9. Conclusion
 
 ## Conclusions
 
-Final recommended variables significant in predicting the demand for shared bikes
+Surprise Housing can keep track of below predictors affecting the price of the house.
 
 <br/>
 
-__temp :__ Demand is postively related with temperature
+__Positive Coefficient Variables - suggest a high sale value__
 <br/>
-__yr :__ Year, yearwise there is growth in demand
+__GrLivArea :__ Above grade (ground) living area square feet
 <br/>
-__sep :__ Demand seems to be more during september month
+__OverallQual :__ Rates the overall material and finish of the house
 <br/>
-__winter :__ Demand is postively related with winter season
+__GarageCars :__ Size of garage in car capacity
 <br/>
-__summer :__ Demand is postively related with summer season
+__YearRemodAdd :__ Remodel date (same as construction date if no remodeling or additions)
 <br/>
-__light_snow_rain :__ Demand is negatively related with weathersit being Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+__MSZoning :__ Identifies the general zoning classification of the sale
 <br/>
-__windspeed :__ Demand is negatively related with wind speed
+__Positive Coefficient Variables - suggest a high sale value__
 <br/>
-__holiday :__ Demand is negatively related with holiday, seems people wish to spend time with family
+__FireplaceQu :__ Fireplace quality
 <br/>
-__misty :__ Demand is negatively related with weathersit being Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
-<br/>
-__spring :__ Demand is negatively related with winter season
-<br/>
-__sep :__ Demand seems to be more during september month
+__ExterQual :__ Evaluates the quality of the material on the exterior
 <br/>
 
 ## Technologies Used
@@ -85,6 +73,7 @@ __sep :__ Demand seems to be more during september month
 - seaborn - Version 0.11.2
 - statsmodels - Version 0.13.2
 - scikit-learn - Version 1.0.2
+- sklearn - version 0.24.2
 - Jupyter Notebook - Version 6.4.12
 - Anaconda - Version 2.3.2
 
