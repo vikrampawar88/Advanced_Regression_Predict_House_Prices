@@ -48,7 +48,6 @@ Surprise Housing can keep track of below predictors affecting the price of the h
 
 __Positive Coefficient Variables - suggest a high sale value__
 <br/>
-<br/>
 
 __GrLivArea :__ Above grade (ground) living area square feet
 <br/>
@@ -65,11 +64,8 @@ __YearRemodAdd :__ Remodel date (same as construction date if no remodeling or a
 __MSZoning :__ Identifies the general zoning classification of the sale
 <br/>
 <br/>
-<br/>
 
 __Negative Coefficient Variables - suggest a decrease in sale value__
-<br/>
-
 <br/>
 
 __FireplaceQu :__ Fireplace quality
