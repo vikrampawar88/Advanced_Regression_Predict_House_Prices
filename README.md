@@ -49,10 +49,10 @@ Surprise Housing can keep track of below predictors affecting the price of the h
 __Positive Coefficient Variables - suggest a high sale value__
 <br/>
 
-__GrLivArea :__ Above grade (ground) living area square feet
-__OverallQual :__ Rates the overall material and finish of the house
-__GarageCars :__ Size of garage in car capacity
-__YearRemodAdd :__ Remodel date (same as construction date if no remodeling or additions)
+__GrLivArea :__ Above grade (ground) living area square feet<br/>
+__OverallQual :__ Rates the overall material and finish of the house<br/>
+__GarageCars :__ Size of garage in car capacity<br/>
+__YearRemodAdd :__ Remodel date (same as construction date if no remodeling or additions)<br/>
 __MSZoning :__ Identifies the general zoning classification of the sale
 <br/>
 <br/>
@@ -60,8 +60,8 @@ __MSZoning :__ Identifies the general zoning classification of the sale
 __Negative Coefficient Variables - suggest a decrease in sale value__
 <br/>
 
-__FireplaceQu :__ Fireplace quality
-__ExterQual :__ Evaluates the quality of the material on the exterior
+__FireplaceQu :__ Fireplace quality<br/>
+__ExterQual :__ Evaluates the quality of the material on the exterior<br/>
 <br/>
 
 ## Technologies Used
